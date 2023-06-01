@@ -5,8 +5,12 @@ scatterplot = dict(
            used=dict(mark='point',
                      quantitative=['position on common scale (horizontal)',
                                    'position on common scale (vertical)'],
-                     category=['point'])
+                     category=['point'])),
   why=dict(find=['trends', 'outliers', 'distribution', 'correlation'],
-           locate='cate clusters')
+           locate='cate clusters'),
   scale=dict(items='hundreds')
 )
+
+import json
+with open('71-scatterplot.json', 'w') as w:
+  json.dump(scatterplot, w)
