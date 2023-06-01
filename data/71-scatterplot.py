@@ -11,6 +11,5 @@ scatterplot = dict(
   scale=dict(items='hundreds')
 )
 
-import json
-with open('71-scatterplot.json', 'w') as w:
-  json.dump(scatterplot, w)
+from generate import gen
+gen(scatterplot, __file__)
